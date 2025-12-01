@@ -59,7 +59,7 @@ export default async function SectionHome() {
           />
           <div className="h-full w-full flex justify-between px-10 md:px-20">
             <Image
-              src="/Logo.png"
+              src="/logo.png"
               alt="logo"
               width={200}
               height={200}
