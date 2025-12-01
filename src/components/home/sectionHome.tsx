@@ -64,6 +64,7 @@ export default async function SectionHome() {
               width={200}
               height={200}
               className="object-contain z-20 animate-bounce select-none"
+              priority
             />
             <div className="mt-48 ml-28 md:ml-36 lg:ml-64 h-1 w-full bg-zinc-400 z-20 animate-pulse rounded-full"></div>
           </div>
