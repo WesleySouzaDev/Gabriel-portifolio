@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 
+import ThemeProviderContainer from '@/components/themeProviderContainer';
+
 import Header from '@/components/header';
 
 const fontRoboto = Roboto({
@@ -20,12 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR">
-      <body
-        className={`${fontRoboto.variable} antialiased bg-var(--background)`}
-      >
-        <Header />
-        {children}
+    <html lang="pt-BR" suppressHydrationWarning>
+      <body className={`${fontRoboto.variable} antialiased`}>
+        <ThemeProviderContainer>
+          <Header />
+          {children}
+        </ThemeProviderContainer>
       </body>
     </html>
   );
