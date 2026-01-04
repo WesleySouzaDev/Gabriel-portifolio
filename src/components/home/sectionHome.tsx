@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import PixelBlast from '../bgHome';
 import Shuffle from './titleHome';
 
 import { Montserrat } from 'next/font/google';
@@ -12,11 +11,11 @@ const montserrat = Montserrat({
 export default async function SectionHome() {
   return (
     <>
-      <section className="w-full h-screen pt-36">
+      <section className="w-full h-screen mb-20 pt-36">
         <div className="w-full h-full pt-16 px-10 overflow-hidden">
           <Shuffle
             text="Gabriel Oliveira"
-            className={`${montserrat.className} text-4xl md:text-8xl text-center w-full mt-10 select-none`}
+            className={`${montserrat.className} text-4xl font-semibold md:text-5xl lg:text-8xl text-center w-full mt-10 select-none`}
             shuffleDirection="right"
             duration={0.35}
             animationMode="evenodd"
@@ -32,7 +31,7 @@ export default async function SectionHome() {
           />
           <Shuffle
             text="Designer Gráfico / Ilustrador"
-            className={`${montserrat.className} text-2xl md:text-4xl text-center w-full mt-8 select-none`}
+            className={`${montserrat.className} text-lg md:text-4xl text-center w-full mt-8 select-none`}
             shuffleDirection="right"
             duration={0.69}
             animationMode="evenodd"
@@ -44,7 +43,7 @@ export default async function SectionHome() {
             triggerOnHover={true}
             respectReducedMotion={true}
           />
-          <div className="h-full w-full flex justify-between px-10 md:px-20">
+          <div className="h-full w-full flex items-start justify-between px-10 md:px-20 mt-28">
             <Image
               src="/logo.png"
               alt="logo"

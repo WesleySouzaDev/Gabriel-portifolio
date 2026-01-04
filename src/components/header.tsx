@@ -12,7 +12,7 @@ export default async function Header() {
         <div className="flex gap-4 justify-center items-center h-full">
           <Link
             href="/galeria"
-            className="text-xl duration-100 hover:underline hover:text-purple-400"
+            className="text-xl duration-100 cursor-none hover:underline hover:text-purple-400"
           >
             Galeria
           </Link>

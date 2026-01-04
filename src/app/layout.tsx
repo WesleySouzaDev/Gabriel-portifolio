@@ -23,7 +23,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" suppressHydrationWarning>
-      <body className={`${fontRoboto.variable} antialiased`}>
+      <body
+        className={`${fontRoboto.variable} antialiased bg-zinc-200 dark:bg-zinc-950`}
+      >
         <ThemeProviderContainer>
           <Header />
           {children}

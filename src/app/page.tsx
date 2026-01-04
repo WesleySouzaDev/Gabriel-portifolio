@@ -1,5 +1,7 @@
 import SectionHome from '@/components/home/sectionHome';
 import SectionTrabalhos from '@/components/trabalhos/sectionTrabalhos';
+import SecionContato from '@/components/contato/sectionContato';
+
 import PixelBlast from '@/components/bgHome';
 
 export default function Home() {
@@ -23,6 +25,7 @@ export default function Home() {
       <main className="">
         <SectionHome />
         <SectionTrabalhos />
+        <SecionContato />
       </main>
     </>
   );

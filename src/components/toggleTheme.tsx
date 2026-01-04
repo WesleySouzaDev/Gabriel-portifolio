@@ -21,7 +21,7 @@ const ToggleTheme = () => {
   return (
     <div className="w-full h-full flex justify-start ml-4">
       <button
-        className="w-12 h-full grid place-items-center text-xl hover:bg-zinc-300 dark:hover:bg-zinc-700 bg-transparent rounded-md duration-100"
+        className="w-12 h-full grid place-items-center text-xl hover:bg-zinc-300 dark:hover:bg-zinc-700 cursor-none bg-transparent rounded-md duration-100"
         onClick={() => setTheme(isDark ? 'light' : 'dark')}
         aria-label="Alternar tema"
         title="Alternar tema"

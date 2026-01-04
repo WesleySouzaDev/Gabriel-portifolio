@@ -36,14 +36,14 @@ export default function NavBar() {
         onClick={() => setOpen((s) => !s)}
         aria-expanded={open}
         aria-label={open ? 'Fechar menu' : 'Abrir menu'}
-        className="w-12 h-full flex items-center text-xl justify-center rounded-md bg-transparent duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 focus:outline-none"
+        className="w-12 h-full flex items-center text-xl justify-center rounded-md bg-transparent duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 focus:outline-none cursor-none"
       >
         {open ? <HiX size={24} /> : <HiMenu size={24} />}
       </button>
 
       <div
         className={
-          'origin-top-right absolute -left-20 mt-8 w-48 bg-white dark:bg-black border-2 drop-shadow-md shadow-purple-500 border-gray-300 shadow-lg rounded-lg overflow-hidden transition-all duration-100 transform ' +
+          'origin-top-right absolute -left-20 mt-8 w-48 bg-zinc-200 dark:bg-zinc-950 border-2 drop-shadow-md shadow-purple-500 border-gray-300 shadow-lg rounded-lg overflow-hidden transition-all duration-100 transform ' +
           (open
             ? 'opacity-100 scale-100 max-h-60 pointer-events-auto'
             : 'opacity-0 scale-95 max-h-0 pointer-events-none')
@@ -56,7 +56,7 @@ export default function NavBar() {
             <Link
               href={'/'}
               scroll={true}
-              className="w-full flex text-left px-3 py-2 rounded duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-lg"
+              className="w-full flex text-left px-3 py-2 cursor-none rounded duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-lg"
               onClick={() => setOpen(false)}
             >
               Home
@@ -67,7 +67,7 @@ export default function NavBar() {
             <Link
               href={'/#trabalhos'}
               scroll={true}
-              className="w-full flex text-left px-3 py-2 rounded duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-lg"
+              className="w-full flex text-left px-3 py-2 cursor-none rounded duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-lg"
               onClick={() => setOpen(false)}
             >
               Trabalhos
@@ -75,7 +75,7 @@ export default function NavBar() {
           </li>
           <li>
             <button
-              className="w-full text-left px-3 py-2 rounded duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-lg"
+              className="w-full text-left px-3 py-2 cursor-none rounded duration-100 hover:bg-zinc-300 dark:hover:bg-zinc-700 text-lg"
               onClick={() => setOpen(false)}
             >
               Contato
